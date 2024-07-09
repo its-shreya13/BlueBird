@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Quiz.css">
+    <title>Simple Quiz App</title>
+</head>
+<body style="background-color: #c38b8b">
+    <div class="Quiz">
+        <div class="questionContainer">
+            <h2>Mental Health Quiz</h2>
+            <form action="quiz-form">
+                <div class="question">
+                    <p>1. How often do you feel stressed?</p>
+                    <label><input type="radio" name="q1" value="1"> Rarely</label>
+                    <label><input type="radio" name="q1" value="2"> Occasionally</label>
+                    <label><input type="radio" name="q1" value="3"> Often</label>
+                    <label><input type="radio" name="q1" value="4"> Always</label>
+                </div>
+                <div class="question">
+                    <p>2. How well do you sleep at night?</p>
+                    <label><input type="radio" name="q2" value="1"> Very well</label>
+                    <label><input type="radio" name="q2" value="2"> Somewhat well</label>
+                    <label><input type="radio" name="q2" value="3"> Poorly</label>
+                    <label><input type="radio" name="q2" value="4"> Very poorly</label>
+                </div>
+                
+                <div class="question">
+                    <p>3. How often do you experience feelings of sadness or hopelessness?</p>
+                    <label><input type="radio" name="q3" value="1"> Rarely</label>
+                    <label><input type="radio" name="q3" value="2"> Occasionally</label>
+                    <label><input type="radio" name="q3" value="3"> Frequently</label>
+                    <label><input type="radio" name="q3" value="4"> Constantly</label>
+                </div>
+                
+                <div class="question">
+                    <p>4. How would you rate your overall energy levels?</p>
+                    <label><input type="radio" name="q4" value="1"> Very high</label>
+                    <label><input type="radio" name="q4" value="2"> Moderate</label>
+                    <label><input type="radio" name="q4" value="3"> Low</label>
+                    <label><input type="radio" name="q4" value="4"> Very low</label>
+                </div>
+                <div class="question">
+                    <p>5. How would you describe your ability to concentrate and focus?</p>
+                    <label><input type="radio" name="q5" value="1"> Excellent</label>
+                    <label><input type="radio" name="q5" value="2"> Good</label>
+                    <label><input type="radio" name="q5" value="3"> Fair</label>
+                    <label><input type="radio" name="q5" value="4"> Poor</label>
+                </div>
+                
+                <div class="question">
+                    <p>6. How often do you engage in activities that bring you joy or relaxation?</p>
+                    <label><input type="radio" name="q6" value="1"> Daily</label>
+                    <label><input type="radio" name="q6" value="2"> Weekly</label>
+                    <label><input type="radio" name="q6" value="3"> Monthly</label>
+                    <label><input type="radio" name="q6" value="4"> Rarely or never</label>
+                </div>
+                
+                <div class="question">
+                    <p>7. How comfortable are you with sharing your feelings with others?</p>
+                    <label><input type="radio" name="q7" value="1"> Very comfortable</label>
+                    <label><input type="radio" name="q7" value="2"> Somewhat comfortable</label>
+                    <label><input type="radio" name="q7" value="3"> Not very comfortable</label>
+                    <label><input type="radio" name="q7" value="4"> Not comfortable at all</label>
+                </div>
+                
+                <div class="question">
+                    <p>8. How would you rate your stress levels in the workplace or at school?</p>
+                    <label><input type="radio" name="q8" value="1"> Low</label>
+                    <label><input type="radio" name="q8" value="2"> Moderate</label>
+                    <label><input type="radio" name="q8" value="3"> High</label>
+                    <label><input type="radio" name="q8" value="4"> Extremely high</label>
+                </div>
+                <div class="question">
+                    <p>9. How would you describe your overall self-esteem and self-worth?</p>
+                    <label><input type="radio" name="q9" value="1"> High</label>
+                    <label><input type="radio" name="q9" value="2"> Moderate</label>
+                    <label><input type="radio" name="q9" value="3"> Low</label>
+                    <label><input type="radio" name="q9" value="4"> Very low</label>
+                </div>
+                
+                <div class="question">
+                    <p>10. How often do you engage in activities that promote relaxation, such as mindfulness or meditation?</p>
+                    <label><input type="radio" name="q10" value="1"> Daily</label>
+                    <label><input type="radio" name="q10" value="2"> Weekly</label>
+                    <label><input type="radio" name="q10" value="3"> Monthly</label>
+                    <label><input type="radio" name="q10" value="4"> Rarely or never</label>
+                </div>
+                <br>
+                <button type="button" onclick="calculateScore()">Submit</button>
+            </form>
+            <div id="result-container" class="hidden">
+                <h2>Your Results</h2>
+                <p id="result-text"></p>
+            </div>
+        </div>
+    </div>
+    <script src="quiz.js"></script>
+</body>
+</html>

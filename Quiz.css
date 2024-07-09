@@ -1,0 +1,87 @@
+body {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   
+ }
+ 
+ .Quiz {
+   text-align: center; 
+   margin: 20px;
+ }
+ 
+ .questionContainer {
+   margin: 20px;
+   padding: 10px;
+   height: 116rem;
+   width: 50rem;
+   background-color: #fff1c5;
+ }
+ .questionContainer h2{
+   font-size: 2.3rem;
+ }
+
+ .question {
+   text-align: left;
+   margin-bottom: 15px;
+}
+
+.question p{
+   font-size: 1.2rem;
+  font-weight: 500;
+}
+
+label {
+   display: block;
+   margin-bottom: 5px;
+}
+
+button {
+   margin-top: 20px;
+}
+
+.hidden {
+   display: none;
+}
+button {
+   background-color: #fec1b0;
+   border-radius: 3px;
+   border: 1px solid #e8836c;
+   box-shadow: rgba(141, 68, 68, 0.7) 0 1px 0 0 inset;
+   box-sizing: border-box;
+   color: #981f09;
+   cursor: pointer;
+   display: inline-block;
+   font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
+   font-size: 13px;
+   font-weight: 400;
+   line-height: 1.15385;
+   margin: 0;
+   outline: none;
+   padding: 8px .8em;
+   position: relative;
+   text-align: center;
+   text-decoration: none;
+   user-select: none;
+   -webkit-user-select: none;
+   touch-action: manipulation;
+   vertical-align: baseline;
+   white-space: nowrap;
+ }
+ 
+ button:hover,
+ button:focus {
+   background-color: #f395bb;
+   color: #3b0328;
+ }
+ 
+ button:focus {
+   box-shadow: 0 0 0 4px white;
+ }
+ 
+ button:active {
+   background-color: #f7b0a5;
+   box-shadow: none;
+   color: #a3210d;
+ }
+ 

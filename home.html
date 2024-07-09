@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+<link
+href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+rel="stylesheet"/>
+   <link rel="stylesheet" href="styles.css">
+   <title>Blue Bird</title>
+</head>
+<body style="background-color: #EAF2D7;">
+   <header>
+      <div class="container">
+         <h3>Blue Bird</h3>
+      </div>
+      
+      <input type="checkbox" id="nav-check" hidden>
+      <nav class="navbar">
+            <li><a href="#">About US</a></li>
+            <li><a href="#">Donate</a></li>
+            <li><a href="/register">Sign-In</a></li>
+           
+      <label for="nav-check" class="drop-down">
+         <div></div>
+         <div></div>
+         <div></div>
+      </label>
+   </header>
+
+   <section class="box">
+      <div class="image">
+         <img src="/images/sky.jpg" alt="">
+         <div class="Quote">
+            <h2>There is hope. There is always hope.</h2>
+            <p>Even when your barin tells you there isnt</p>
+         </div>
+      </div>
+   </section>
+
+   <section class="About">
+      <div class="about_us">
+         <h1>About Us</h1>
+         <p>Blue Bird is your mental health sanctuary. <br>We're dedicated to fostering understanding, providing resources, and building a supportive community. <br> Together, let's navigate the path to mental well-being</p>
+      </div>
+   </section>
+   <section>
+      <div class="test-section">
+         <div class="test-link">
+            <h2>General Mental Health Quiz</h2>
+            <p>
+               Explore your mental well-being by taking this generic mental health quiz. While this online test can offer insights into your current state, it is important to remember that it is not a substitute for professional assessment. Mental health is complex and individual, and this quiz provides a broad overview. If you have concerns about your mental health or well-being, consider seeking guidance from a qualified healthcare professional or mental health provider.
+            </p>
+            <a href="Quiz.html"><button class="quiz-btn">Quiz</button></a> 
+      </div>
+   </section>
+
+   <section class="doodles">
+      <h2>A liitle doodle from us to cheer u up!!!</h2>
+      <div class="slideshow">
+         <img class="slide" src="/images/6.jpg" alt="">
+         <img class="slide" src="/images/7.jpg" alt="">
+         <img class="slide" src="/images/19.jpg" alt="">
+         <button class="prev" onclick="plusDivs(-1)">&#10094;</button>
+         <button class="next" onclick="plusDivs(1)">&#10095;</button>
+         <script src="sliding.js"></script>
+      </div>
+   </section>
+   <section>
+
+      <section>
+         <div class="Helpline">
+            <div class="call">
+               <h3>
+                   If you or someone you know is in crisis, help is available right now.
+               </h3>
+               <p><b style="color: black;">Call:</b> 14416 / 1800-89-14416</p>
+            </div> 
+         </div>
+      </section>
+      <div class="post">
+         <div class="text">
+            <h2>Subscribe to Blue Bird.</h2>
+            <h3>Elevate your mental health journey with Blue Bird. <br> 
+             Our newsletter delivers valuable resources, personal stories, and practical tips. <br> 
+            Subscribe to start your transformative path today.</h3>
+            <a href="Sign-in."><button class="signin-btn"> Sign Up!!!</button></a>
+            
+         </div>
+            <img src="/images/storyImage.jpg" alt="">
+         </div> 
+      </div>
+   </section>
+   
+
+  
+   <footer>
+      <div class="social-icons">
+        <a href="https://twitter.com" target="_blank"><i class="ri-twitter-fill"></i></a>
+        <a href="https://www.instagram.com/blue_bird1330?igsh=MTVldXpzOG94ODI2ZQ==" target="_blank"><i class="ri-instagram-fill"></i></a>
+        <a href="https://facebook.com" target="_blank"><i class="ri-facebook-fill"></i></a>
+      </div>
+      <p>&copy; Blue Bird. All rights reserved.</p>
+    </footer>
+</body>
+</html>

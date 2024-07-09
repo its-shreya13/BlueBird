@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Register</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: rgb(188, 234, 252);
+        }
+
+        .reg-container {
+            text-align: center;
+            border: 2px solid #2c2a2a;
+            padding: 20px;
+            border-radius: 10px;
+            height: 40vh;
+            width: 60vh;
+            background-color: rgb(249, 249, 242);
+        }
+
+        .reg-container h1 {
+            padding: 10px;
+            font-size: 30px;
+        }
+
+        .box {
+            text-align: left;
+        }
+
+        .box label {
+            display: block;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+
+        .box input {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 8px;
+            margin-top: 5px;
+        }
+        .box .btn{
+            align-items: center;
+        }
+
+        .btn {
+            background-color: #EA4C89;
+            border-radius: 8px;
+            border-style: none;
+            box-sizing: border-box;
+            color: #FFFFFF;
+            cursor: pointer;
+            display: inline-block;
+            font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            height: 40px;
+            line-height: 20px;
+            padding: 10px 16px;
+            position: relative;
+            text-align: center;
+            text-decoration: none;
+            transition: color 100ms;
+            margin-top: 10px;
+            margin-left: 140px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="reg-container">
+        <h1>Log-In</h1>
+        <div class="box">
+            <form action="/login" method="post">
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                
+                <button class="btn" type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
