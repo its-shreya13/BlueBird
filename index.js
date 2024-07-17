@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const app = express();
 const path = require('path');
 
-mongoose.connect("mongodb://localhost:27017/Mental_Health")
+mongoose.connect("mongodb://localhost:27017/your-db-name")
 .then(()=>{
     console.log('mongoose connected');
 })
