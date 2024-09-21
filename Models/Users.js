@@ -1,18 +1,29 @@
 const mongoose=require('mongoose')
 
 
-mongoose.connect("mongodb://localhost:27017/Register")
-.then(()=>{
-    console.log('mongoose connected');
-})
-.catch((e)=>{
-    console.log('failed');
-})
+
 
 const userSchema = new mongoose.Schema({
-   username: String,
-   email: String,
-   password: String,
+   username:
+   {
+    type: String,
+   required: true,
+   },
+   email:
+   {
+    type: String,
+   required: true,
+   },
+   password:
+   {
+    type: String,
+   required: true,
+   },
+   
 });
+
+const Register=mongoose.model('Register',userSchema);
+
+module.exports=Register;
 
 

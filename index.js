@@ -4,10 +4,15 @@ const app = express();
 const path = require('path');
 
 
-app.use(express.urlencoded({ extended: false }));
-app.use(express.static(path.join(__dirname)));
 
 
+mongoose.connect("mongodb://localhost:27017/Register")
+.then(()=>{
+    console.log('mongoose connected');
+})
+.catch((e)=>{
+    console.log('failed');
+})
 
 const PORT = 3000;
 app.listen(PORT, () => {
