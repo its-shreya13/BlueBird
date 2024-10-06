@@ -1,12 +1,9 @@
 const express = require('express');
-const bodyParser = require('body-parser');
 const app = express();
 const path = require('path');
+const dotenv = require('dotenv');
 
-
-
-
-mongoose.connect("mongodb://localhost:27017/Register")
+mongoose.connect(process.env.MONGODB_URI, {})
 .then(()=>{
     console.log('mongoose connected');
 })
